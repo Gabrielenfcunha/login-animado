@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: rgb(33, 145, 145);
+}
+.containe{
+  height: 31.25em;
+  width: 31.25em;
+  position: absolute;
+  transform:translate(-50% , -50%);
+  top: 50%;
+  left: 50%;
+}
+form{
+  width: 23.75em;
+  height: 18.75em;
+  background-color: #fff;
+  position: absolute;
+  transform:translate(-50%, -50%);
+  top: calc(50% + 3.1em);
+  left: 50%;
+  padding: 0 3.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5em;
+}
+form label{
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  color: #000;
+}
+form input{
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #3f3554;
+  padding: 0.3em;
+  border: none;
+  border-bottom: 0.12em solid #3f3554;
+  outline: none;
+}
+form input:focus{
+  border-color:rgb(53, 134, 210);
+}
+form input:not(:last-child){
+  margin-bottom: 0.9em;
+}
+form button{
+  font-size: 0.95em;
+  padding: 0.8em 0;
+  border-radius: 2em;
+  border: none;
+  outline: none;
+  background-color: rgb(33, 145, 145);
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-top: 0.8em;
+}
+/* face do urso polar */
+.Polar-Bear-face{
+  height: 7.5em;
+  width: 8.4em;
+  background-color: #fff;
+  border: 0.18em solid #000;
+  border-radius: 7.5em 7.5em 5.62em 5.62em;
+  position: absolute;
+  top: 2em;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+/* orelha urso polar */
+.ear-l ,.ear-r{
+background-color: #fff;
+height: 5.5em;
+width: 4.5em;
+border: 0.18em solid #000;
+border-radius: 2.5em 2.5em 0 0;
+top: 1.75em;
+position: absolute;
+}
+.ear-l1 ,.ear-r2{
+background-color: #fac5ef;
+height: 2.5em;
+width: 2.5em;
+border: 0.12em solid #000;
+border-radius: 2.5em 2.5em 0 0;
+top: 2.75em;
+position: absolute;
+}
+.ear-l {
+  transform: rotate(-38deg);
+  left: 10.75em;
+}
+.ear-l1 {
+  transform: rotate(-38deg);
+  left: 10.75em;
+}
+.ear-r{
+  transform: rotate(38deg);
+  right: 10.75em;
+}
+.ear-r2{
+  transform: rotate(38deg);
+  right: 10.75em;
+}
+/* as bochecha do urso polar */
+.blush-l,.blush-r{
+  background-color: #ff8bb1;
+  height: 1em;
+  width: 1.37em;
+  border-radius: 50%;
+  position: absolute;
+  top: 4em;
+}
+.blush-l{
+  transform: rotate(25deg);
+  left: 1em;
+}
+.blush-r{
+  transform: rotate(-25deg);
+  right: 1em;
+}
+/* olhos do urso polar */
+.eye-l,
+.eye-r{
+  background-color: #000000;
+  height: 2.18em;
+  width: 2em;
+  border-radius: 2em;
+  position: absolute;
+  top: 2.18em;
+}
+.eye-l{
+  left: 1.37em;
+  transform: rotate(-20deg);
+}
+.eye-r{
+  right: 1.37em;
+  transform: rotate(20deg);
+}
+.eyball-l,
+.eyball-r{
+  height: 1em;
+  width: 1em;
+  background-color:#fcf7f7;
+  border-radius: 50%;
+  position: absolute;
+  left: 0.6em;
+  top: 0.6em;
+  transition: 1s all;
+}
+/* nariz do urso polar */
+.nose{
+  height: 1em;
+  width: 1em;
+  background-color: #000;
+  position: absolute;
+  top: 4.37em;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 1.2em 0 0 0.25em;
+  transform: rotate(45deg);
+}
+.nose::before{
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 0.6em;
+  width: 0.1em;
+  transform: rotate(-45deg);
+  top: 0.75em;
+  left: 1em;
+}
+/* boca do urso polar */
+.mouth,.mouth::before{
+  height: 0.75em;
+  width: 0.93em;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0.18em #000;
+}
+.mouth{
+  top: 5.31em;
+  left: 3.12em;
+}
+.mouth::before{
+  content: "";
+  position: absolute;
+  left: 0.87em;
+}
+/* mão do urso polar */
+.hand-l,.hand-r{
+  background-color: #fff;
+  height: 2.81em;
+  width: 2.5em;
+  border: 0.18em solid #000;
+  border-radius: 0.6em 0.6em 2.18em 2.18em;
+  transition: 1s all;
+  position: absolute;
+  top: 8.4em;
+}
+.hand-l{
+  left: 7.5em;
+}
+.hand-r{
+  right: 7.5em;
+}
+/* pata do urso polar */
+.paw-l,.paw-r{
+  background-color: #fff;
+  height: 3.12em;
+  width: 3.12em;
+  border: 0.18em solid #000;
+  border-radius: 2.5em 2.5em 1.2em 1.2em;
+  position: absolute;
+  top: 26.56em;
+}
+.paw-l{
+   left: 10em;
+}
+.paw-r{
+  right: 10em ;
+}
+.paw-l::before,.paw-r::before{
+  position: absolute;
+  content: "";
+  background-color: #ff8bb1;
+  height: 1.37em;
+  width: 1.75em;
+  top: 1.12em;
+  left: 0.55em;
+  border-radius: 1.56em 1.56em 0.6em 0.6em;
+}
+.paw-l::after,.paw-r::after{
+  position: absolute;
+  content: "";
+  background-color: #ff8bb1;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  top: 0.31em;
+  left: 1.12em;
+  box-shadow: 0.87em 0.37em  #ff8bb1, -0.87em 0.37em  #ff8bb1 ;
+}
+@media screen and (max-width:500px){
+  .containe{
+    font-size: 14px;
+  }
+}
